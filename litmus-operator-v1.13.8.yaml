@@ -153,13 +153,13 @@ spec:
       serviceAccountName: litmus
       containers:
         - name: chaos-operator
-          image: hub.chinauos.com/jzy-test/chaos-operator:1.13.8
+          image: 10.30.38.116/library/chaos-operator:1.13.8
           command:
           - chaos-operator
           imagePullPolicy: Always
           env:
             - name: CHAOS_RUNNER_IMAGE
-              value: "hub.chinauos.com/jzy-test/chaos-runner:1.13.8"
+              value: "10.30.38.116/library/chaos-runner:1.13.8"
             - name: WATCH_NAMESPACE
               value: ""
             - name: POD_NAME
